@@ -1,0 +1,25 @@
+# include <stdio.h>
+# include <conio.h>
+main ()
+{
+int i,j;
+int a[3][3]={1,2,3,4,5,6,7,8,9};
+
+printf ("\n Array elements and address ");
+printf ("\n\t Col-0 Col-1 Col-2");
+printf ("\n\t ====== ====== ======");
+printf ("\nRow0");
+
+for (i=0;i<3;i++)
+{
+    for (j=0;j<3;j++)
+    
+printf (" %d [%u]",a[i][j],&a[i][j]);
+printf ("\nRow%d",i+1);
+
+}
+
+printf ("\r ");
+
+}
+
